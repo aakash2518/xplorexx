@@ -91,9 +91,25 @@ const Footer = () => (
           <ul className="space-y-3.5 text-sm">
             <li className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg bg-primary/5 grid place-items-center flex-shrink-0">
+                <Phone className="w-3.5 h-3.5 text-primary" />
+              </div>
+              <a href="tel:8447706518" className="text-primary font-bold hover:text-accent transition-colors">
+                +91 8447 706 518
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-lg bg-primary/5 grid place-items-center flex-shrink-0">
+                <Mail className="w-3.5 h-3.5 text-primary" />
+              </div>
+              <a href="mailto:info@xplorex.in" className="text-primary font-bold hover:text-accent transition-colors">
+                info@xplorex.in
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-lg bg-primary/5 grid place-items-center flex-shrink-0">
                 <MapPin className="w-3.5 h-3.5 text-primary" />
               </div>
-              <span className="text-primary/55 font-semibold">India · Global Service</span>
+              <span className="text-primary/55 font-semibold">Faridabad, India · Global Service</span>
             </li>
           </ul>
         </div>

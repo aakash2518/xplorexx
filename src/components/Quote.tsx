@@ -55,7 +55,18 @@ const Quote = () => {
               Tell us where you'd like to go. We'll send a customized itinerary with transparent pricing within 2 hours.
             </p>
 
-            {/* Contact info boxes removed for now */}
+            <div className="space-y-3">
+              {[
+                { k: "Call",  v: "+91 8447 706 518" },
+                { k: "Email", v: "info@xplorex.in" },
+                { k: "Hours", v: "24 / 7 — Always Available" },
+              ].map((c) => (
+                <div key={c.k} className="flex items-center gap-4 bg-white rounded-2xl p-4 sm:p-5 shadow-3d border border-primary/5">
+                  <div className="text-[10px] uppercase tracking-widest text-primary/30 font-bold w-12 sm:w-16 flex-shrink-0">{c.k}</div>
+                  <div className="font-bold text-primary text-sm sm:text-base">{c.v}</div>
+                </div>
+              ))}
+            </div>
           </motion.div>
 
           {/* Form */}

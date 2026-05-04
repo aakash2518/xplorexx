@@ -59,7 +59,9 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="space-y-4 lg:col-span-1">
               {[
-                { icon: MapPin, label: "Visit Us",   value: "XXXXXXXXX, India",    sub: "Serving travelers globally" },
+                { icon: Phone,  label: "Call Us",    value: "+91 8447 706 518",     sub: "Available 24/7" },
+                { icon: Mail,   label: "Email Us",   value: "info@xplorex.in",     sub: "Replies within 2 hours" },
+                { icon: MapPin, label: "Visit Us",   value: "Faridabad, India",    sub: "Serving travelers globally" },
                 { icon: Clock,  label: "Work Hours", value: "Mon - Sat",           sub: "10:00 AM - 7:00 PM" },
               ].map((item, i) => (
                 <motion.div

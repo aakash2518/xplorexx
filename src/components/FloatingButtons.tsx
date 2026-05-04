@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone } from "lucide-react";
 import { useState } from "react";
 
-const PHONE = "XXXXXXXXXX";
-const WA_NUMBER = "XXXXXXXXXXXX";
+const PHONE = "8447706518";
+const WA_NUMBER = "918447706518";
 const WA_MSG = encodeURIComponent("Hi! I'm interested in a trip package. Please help me plan my trip. 🌍");
 
 export default function FloatingButtons() {
@@ -55,7 +55,38 @@ export default function FloatingButtons() {
         </motion.a>
       </div>
 
-      {/* Call button removed for now */}
+      {/* ── Call Us ── */}
+      <div
+        className="flex items-center gap-2"
+        onMouseEnter={() => setHovered("call")}
+        onMouseLeave={() => setHovered(null)}
+      >
+        {/* Label */}
+        <AnimatePresence>
+          {hovered === "call" && (
+            <motion.span
+              initial={{ opacity: 0, x: 8, scale: 0.95 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{   opacity: 0, x: 8, scale: 0.95 }}
+              transition={{ duration: 0.18 }}
+              className="bg-white text-primary font-bold text-sm px-3 py-1.5 rounded-xl shadow-3d border border-primary/15 whitespace-nowrap"
+            >
+              {PHONE}
+            </motion.span>
+          )}
+        </AnimatePresence>
+
+        <motion.a
+          href={`tel:${PHONE}`}
+          aria-label="Call us"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.93 }}
+          className="relative flex items-center justify-center rounded-full bg-primary shadow-lg"
+          style={{ width: "52px", height: "52px" }}
+        >
+          <Phone className="w-6 h-6 text-white" />
+        </motion.a>
+      </div>
 
     </div>
   );

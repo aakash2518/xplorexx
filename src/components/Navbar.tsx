@@ -87,7 +87,14 @@ const Navbar = memo(function Navbar() {
 
           {/* CTA + hamburger */}
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Phone button removed */}
+            <a
+              href="tel:8447706518"
+              className="hidden sm:flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl bg-accent text-white font-semibold shadow-press hover:translate-y-0.5 active:translate-y-1 transition-transform text-xs sm:text-sm"
+            >
+              <Phone className="w-3 sm:w-4 h-3 sm:h-4" />
+              <span className="hidden md:inline">8447706518</span>
+              <span className="md:hidden">Call</span>
+            </a>
 
             <button
               type="button"
@@ -130,7 +137,13 @@ const Navbar = memo(function Navbar() {
               ))}
 
               <div className="mt-3 pt-3 border-t border-primary/10 sm:hidden">
-                {/* Mobile phone button removed */}
+                <a
+                  href="tel:8447706518"
+                  className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-accent text-white font-semibold text-sm"
+                >
+                  <Phone className="w-4 h-4" />
+                  8447706518
+                </a>
               </div>
             </motion.nav>
           )}

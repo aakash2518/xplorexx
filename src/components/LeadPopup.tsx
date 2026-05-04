@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, MapPin, Calendar, User, Phone, Plane } from "lucide-react";
 
-const WHATSAPP_NUMBER = "XXXXXXXXXXXX";
+const WHATSAPP_NUMBER = "918447706518";
 
 const DESTINATIONS = [
   "Bali", "Dubai", "Thailand", "Maldives", "Singapore", "Vietnam",
